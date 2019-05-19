@@ -1,0 +1,43 @@
+@media (max-width: 1300px) {
+  .wrapper ul:hover li:hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper ul:hover li:hover {
+    width: 300%;
+  }
+  .slide2, .slide3, .slide4, .slide5 {
+    margin-left: 0;
+  }
+  .slide2 .img, .slide3 .img, .slide4 .img, .slide5 .img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper ul li {
+    width: 100vw;
+    height: 40px;
+  }
+  .wrapper ul:hover li:hover {
+    width: 100vw;
+    height: 140px;
+  }
+  .slide2, .slide3, .slide4, .slide5 {
+    margin-left: 0;
+  }
+  .slide2 .img, .slide3 .img, .slide4 .img, .slide5 .img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack.ttf") format("truetype"), url("../fonts/MyriadPro-Cond.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.accordion {
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  height: 680px;
+}
+
+.accordion ul {
+  overflow: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordion ul li {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: calc(20% + 190px);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+
+.accordion ul:hover li:hover .infoList {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.img p {
+  position: relative;
+  text-align: end;
+  width: 600px;
+  top: 600px;
+  left: 45%;
+  font-family: "GothamProBlack";
+  font-size: 77px;
+  -webkit-transform: rotate(-74deg);
+          transform: rotate(-74deg);
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.infoList {
+  position: absolute;
+  top: 0%;
+  font-family: "GothamProBlack";
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.slide1 .img {
+  position: relative;
+  background-image: url(../img/ac_agrotechnics.jpg);
+}
+
+.slide2 .img {
+  background-image: url(../img/ac_light-car.jpg);
+}
+
+.slide3 .img {
+  background-image: url(../img/ac_trucking.jpg);
+}
+
+.slide4 .img {
+  background-image: url(../img/ac_special-equipment.jpg);
+}
+
+.slide5 .img {
+  background-image: url(../img/ac_railway-transport.jpg);
+}
+
+.slide2, .slide3, .slide4, .slide5 {
+  position: relative;
+  margin-left: -190px;
+}
+
+.slide2 .img, .slide2 .infoList, .slide3 .img, .slide3 .infoList, .slide4 .img, .slide4 .infoList, .slide5 .img, .slide5 .infoList {
+  -webkit-clip-path: polygon(190px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(190px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews {
+  width: 406px;
+}
+
+.reviews h3 {
+  font-size: 50px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 90px;
+}
+
+.reviews p {
+  font-size: 18px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.reviews button {
+  width: 240px;
+  height: 60px;
+  background-color: #1c7fff;
+  color: #fff;
+  border: none;
+  margin-top: 45px;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+#grid img {
+  height: auto;
+  width: 190px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#grid img:nth-child(8) {
+  height: auto;
+  width: 90px;
+}
+/*# sourceMappingURL=style_t6.css.map */

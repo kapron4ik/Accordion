@@ -1,0 +1,50 @@
+
+@media (max-width: 1300px){
+	.wrapper {	
+		ul {			
+			&:hover li:hover {
+				width:100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.wrapper {	
+		ul {			
+			&:hover li:hover {
+				width:300%;
+			}
+		}
+	}
+
+	.slide2, .slide3, .slide4, .slide5 {
+		margin-left: 0;
+		.img {  
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
+}
+
+@media (max-width: 320px){
+	.wrapper {	
+		ul {
+			flex-direction: column;			
+			li {
+				width:100vw; // 5 into 100
+				height: 40px;
+			}
+			&:hover li:hover {
+				width:100vw;
+				height: 140px;
+			}
+		}
+	}
+
+	.slide2, .slide3, .slide4, .slide5 {
+		margin-left: 0;
+		.img {  
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
+}

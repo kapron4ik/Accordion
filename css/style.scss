@@ -1,0 +1,184 @@
+
+
+@font-face {
+    font-family: "GothamProBlack"; 
+    src: url("../fonts/GothamProBlack.ttf") format("truetype"), 
+    url("../fonts/MyriadPro-Cond.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+$a-height: 680px;
+
+.accordion {
+    width: 100vw;
+    margin:0 auto;
+    position: relative;
+    height:$a-height;
+    
+    ul {
+        overflow:hidden;
+        height: 100%;
+        display: flex;
+        
+        li {
+            position: relative;
+            display:block;
+            overflow:hidden;
+            width: calc(20% + 190px);
+            transition:all 500ms ease;
+
+            div {
+                height: $a-height;
+                background-repeat:no-repeat;
+                background-size: cover;
+                // transform-origin: center center;
+
+                // a { position: relative;      
+                //         display:block;
+                //         height:$a-height;
+                //         text-decoration:none;
+                        
+                //     }
+            
+            }
+        // li:first-child {
+        //     width: 10%;
+        // }
+            
+        }      
+
+        &:hover li:hover {
+            width:60%;
+            // div {
+                .infoList {      
+                    position: absolute;  
+                    // bottom: 300px;                            
+                // right: 0px; 
+                    background:rgba(255,255,255,0.8);               
+                }
+            // }
+            
+        }
+    }
+}
+
+.img{
+    p {
+        position: relative;
+        text-align: end;
+        width: 600px;
+        top: 600px;
+        left: 45%;
+        font-family: "GothamProBlack"; 
+        font-size: 77px;
+        transform: rotate(-74deg);
+        transform-origin: 0% 100%;
+        color:rgba(255,255,255,0.8); 
+    }
+}
+
+.infoList {
+    position: absolute;
+    top: 0%;
+    font-family: "GothamProBlack"; 
+    font-size: 15px;
+    color:rgba(255,255,255,0.8);
+}
+
+.slide1 .img {
+    position: relative;
+    background-image:url(../img/ac_agrotechnics.jpg);  
+}
+
+.slide2 .img {
+    background-image:url(../img/ac_light-car.jpg);            
+}
+
+.slide3 .img  {  
+    background-image:url(../img/ac_trucking.jpg); 
+}
+
+.slide4 .img  { 
+    background-image:url(../img/ac_special-equipment.jpg);
+}
+
+.slide5 .img  {   
+    background-image:url(../img/ac_railway-transport.jpg);
+}
+
+.slide2, .slide3, .slide4, .slide5 {
+    position: relative;
+    margin-left: -190px;
+    .img, .infoList {  
+        clip-path: polygon(190px 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.wrapper {
+    width: 1240px;
+    margin:0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews {
+    width: 406px;
+    h3 {
+        font-size: 50px;
+        font-family: 'Myriad Pro';
+        font-weight: normal;
+        font-style: normal;
+        margin-top: 90px;
+    }
+    p{  
+        font-size: 18px;
+        font-family: 'Myriad Pro';
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.5;
+        margin-top: 50px;
+    }
+    button {
+        width: 240px;
+        height: 60px;
+        background-color: #1c7fff;
+        color: #fff;
+        border: none;
+        margin-top: 45px;
+
+
+    }
+}
+
+#grid { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    img {
+        height: auto;
+        width: 190px;
+        // font-size: 5vw;
+        // padding: .5em;
+        // background: gold;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    img:nth-child(8){
+        height: auto;
+        width: 90px; 
+    }
+}
+
+
+
+
+
+
+
+
+

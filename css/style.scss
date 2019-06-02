@@ -2,88 +2,103 @@
 
 @font-face {
     font-family: "GothamProBlack"; 
-    src: url("../fonts/GothamProBlack.ttf") format("truetype"), 
-    url("../fonts/MyriadPro-Cond.ttf") format("truetype"); 
+    src: url("../fonts/GothamProBlack.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Myriad Pro"; 
+    src: url("../fonts/MyriadPro-Cond.ttf") format("truetype");
     font-style: normal; 
     font-weight: normal; 
 }
 
-$a-height: 680px;
+// $a-height: 680px;
 
 .accordion {
-    width: 100vw;
-    margin:0 auto;
-    position: relative;
-    height:$a-height;
+    width: 100%;
     
-    ul {
+    & > ul {
         overflow:hidden;
-        height: 100%;
+        height:680px;
         display: flex;
         
-        li {
-            position: relative;
-            display:block;
+        & > li {
             overflow:hidden;
             width: calc(20% + 190px);
             transition:all 500ms ease;
 
             div {
-                height: $a-height;
+                height: 100%;
                 background-repeat:no-repeat;
-                background-size: cover;
-                // transform-origin: center center;
-
-                // a { position: relative;      
-                //         display:block;
-                //         height:$a-height;
-                //         text-decoration:none;
-                        
-                //     }
-            
-            }
-        // li:first-child {
-        //     width: 10%;
-        // }
-            
+                background-size: cover; 
+                // p {
+                    
+                // }                          
+            }            
         }      
 
-        &:hover li:hover {
+        &:hover > li:hover {
             width:60%;
-            // div {
-                .infoList {      
-                    position: absolute;  
-                    // bottom: 300px;                            
-                // right: 0px; 
-                    background:rgba(255,255,255,0.8);               
-                }
-            // }
-            
+            .infoList {      
+                // position: absolute;  
+                background:rgba(255,255,255,0.8);               
+            }            
         }
     }
 }
 
-.img{
-    p {
-        position: relative;
-        text-align: end;
-        width: 600px;
-        top: 600px;
-        left: 45%;
-        font-family: "GothamProBlack"; 
-        font-size: 77px;
-        transform: rotate(-74deg);
-        transform-origin: 0% 100%;
-        color:rgba(255,255,255,0.8); 
-    }
+.title {
+    position: relative;
+    text-align: end;
+    width: 600px;
+    top: 600px;
+    left: 41%;
+    font-family: "GothamProBlack"; 
+    font-size: 77px;
+    transform: rotate(-74deg);
+    transform-origin: 0% 100%;
+    color:rgba(255,255,255,0.8); 
+}
+
+b {
+    font-weight: 800;
 }
 
 .infoList {
+    display: none;
+    width: 100%;
     position: absolute;
     top: 0%;
     font-family: "GothamProBlack"; 
-    font-size: 15px;
-    color:rgba(255,255,255,0.8);
+    font-size: 16px;
+    color:#363636;
+    div {
+        width: 400px;
+        margin-top: 160px;
+        margin-left: 30%;
+        h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h5 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: "Myriad Pro";
+            font-weight: 600;
+        }
+        li {
+            list-style-type: disc;
+            color: #1c7fff;
+            span {
+                font-family: 'Myriad Pro';
+                font-weight: normal;
+                line-height: 1.5;
+                color: #363636;
+            }
+        }
+
+    }
 }
 
 .slide1 .img {
@@ -121,18 +136,19 @@ $a-height: 680px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .reviews {
     width: 406px;
     h3 {
         font-size: 50px;
-        font-family: 'Myriad Pro';
+        font-family: "GothamProBlack";
         font-weight: normal;
         font-style: normal;
         margin-top: 90px;
     }
-    p{  
+    p {  
         font-size: 18px;
         font-family: 'Myriad Pro';
         font-weight: normal;
@@ -147,8 +163,6 @@ $a-height: 680px;
         color: #fff;
         border: none;
         margin-top: 45px;
-
-
     }
 }
 
@@ -160,9 +174,6 @@ $a-height: 680px;
     img {
         height: auto;
         width: 190px;
-        // font-size: 5vw;
-        // padding: .5em;
-        // background: gold;
         position: relative;
         top: 50%;
         left: 50%;
@@ -172,6 +183,11 @@ $a-height: 680px;
         height: auto;
         width: 90px; 
     }
+}
+
+.infolist_ul {
+    display: block;
+    height: 200px;
 }
 
 
